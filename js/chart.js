@@ -47,7 +47,7 @@ rates = rates.map(rate => ({
     formatter: '{a}<br>{b}: {c}%'
   }
 }));
-const option = {
+const horizontalChartOption = {
   title: {
     text: '双向柱状图'
   },
@@ -202,7 +202,7 @@ const option = {
     }
   ]
 };
-horizontalChart.setOption(option);
+horizontalChart.setOption(horizontalChartOption);
 
 window.onresize = function() {
   horizontalChart.resize();
