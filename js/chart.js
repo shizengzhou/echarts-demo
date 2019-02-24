@@ -203,3 +203,7 @@ const option = {
   ]
 };
 horizontalChart.setOption(option);
+
+window.onresize = function() {
+  horizontalChart.resize();
+}
