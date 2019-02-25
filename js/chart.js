@@ -479,5 +479,4 @@ scatterChart.setOption(scatterOption);
 
 window.onresize = function() {
   horizontalChart.resize();
-  scatterChart.resize();
 }
