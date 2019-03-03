@@ -101,6 +101,9 @@
           title: {
             text: '地图下钻'
           },
+          geo: {
+            map: 'liaoning'
+          },
           series: [
             {
               type: 'map',
@@ -111,6 +114,25 @@
                   show: true
                 }
               }
+            },
+            {
+              type: 'effectScatter',
+              coordinateSystem: 'geo',
+              rippleEffect: {
+                period: 8,
+                scale: 4
+              },
+              itemStyle: {
+                normal: {
+                  color: '#FFC848'
+                }
+              },
+              data: [
+                [123.429096, 41.796767],
+                [123.844279, 42.290585],
+                [122.18, 40.65],
+                [121.62, 38.92]
+              ]
             }
           ]
         };
